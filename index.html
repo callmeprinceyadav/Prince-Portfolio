@@ -58,14 +58,15 @@
 
     .firstsection{
         display: flex;
-        justify-content: space-around;
+        justify-content: space-evenly;
         align-items: center;
         margin: 100px 0;
         /* margin-bottom: 10px; */
         flex-wrap: wrap;
     }
     .firstsection > div{
-        width: 30%;
+        width: 20%;
+        /* border: 2px solid green; */
     }
 
     .leftsection{
@@ -75,9 +76,9 @@
     }
     .rightsection{
         /* background-color: red; */
-        width: auto !important;
+        width: 50%;
     }
-    resume{
+    .resume{
         padding: 10px;
         color: aqua;
         font-size: 1rem;
@@ -86,9 +87,10 @@
         margin-top: 50px;
         border-radius: 10px;
         cursor: pointer;
+        text-decoration: none;
     }
 
-    .secondsection{
+    #secondsection{
         /* border: 1px solid black!important; */
         width: 98%;
         height: auto;
@@ -278,12 +280,18 @@
             background-color: rgb(19, 18, 18);
             border-radius: 5px;
             cursor: pointer;
+
                 }
 
+        live a{
+            text-decoration: none;
+            color: white;
+        }
 
         demo{
                 padding: 5px;
-                
+                padding-right: 20px;
+                padding-left: 15px;
                 color: white;
                 font-size: 1.2rem;
                 border: 1px solid black !important;
@@ -321,7 +329,7 @@
         @media screen and (max-width: 700px) {
 
             main{
-                margin-left: 5px;
+                margin: 5px;
             }
 
             nav{
@@ -329,23 +337,53 @@
             }
 
             .left{
+                /* font-size: 5px; */
                 display: none;
             }
-            .right{
-                display: none;
+            .firstsection{
+                display: flex;
+                /* margin: auto; */
+                border: 2px solid red;
+                width: 80%;
+                justify-content: space-evenly;
+                margin-left: 10px;
+                padding-left: 15%;
             }
-
+            .firstsections > div{
+                width: 40%;
+                border: 2px solid black;
+            }
 
             .leftsection{
-                font-size: 15px;
+                font-size: 1rem;
+                text-align: left;
             }
-            .rightsection > img {
-                width: 20%;
+            .rightsection {
+                margin: auto;
+                width: 30%;
+                /* border: 2px solid green; */
+                
+            }
+
+            .picsection{
+                width: 70%;
+                height: 75%;
+            }
+
+            .picsection>img{
+                margin: auto;
+                width: 100%;
+                height: 100%;
             }
 
             #resume{
                 margin-top: 20px;
                 margin-bottom: 20px;
+    }
+
+    .aboutsection{
+        padding: 0;
+        font-size: 15px;
     }
 
     
@@ -371,11 +409,11 @@
             <div class="left">Prince's Portfolio</div>
             <div class="right">
                 <ul>
-                        <li><a href="/home">Home</a></li>
-                        <li><a href="/">About</a></li>
-                        <li><a href="/">Skills</a></li>
-                        <li><a href="/">Projects</a></li>
-                        <li><a href="/">Contact</a></li>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#Skill&Tools">Skills</a></li>
+                        <li><a href="#projectsection">Projects</a></li>
+                        <li><a href="#contactsection">Contact</a></li>
                     
                 </ul>
             </div>
@@ -393,20 +431,20 @@
                     <span id="element"></span>
                 </div>
                 <div id="resume">
-                    <resume  style="margin-bottom: 20px;" >Resume</resume>
+                    <resume  style="margin-bottom: 20px;" ><a href="Prince_Kumar-Cap04_103-FrontendDeveloper.pdf" download="Prince_Kumar_Resume.pdf" class="resume">Resume</a></resume>
                 </div>
                 
             </div>
             <div class="rightsection">
-                <img style="width: 80%;border-radius: 50%;border: 1px solid rgb(141, 138, 138);" src="rename.png" alt="Prince Kumar Pic">
+                <img style="width: 100%;border-radius: 50%;border: 1px solid rgb(141, 138, 138);" src="rename.png" alt="Prince Kumar Pic">
             </div>
             
         </section>
 
-        <h2 style="text-align: center;text-decoration: underline;font-size: 2rem;margin: 10px;margin-top: 50px;">ABOUT ME</h2>
+        <h2 id="about" style="text-align: center;text-decoration: underline;font-size: 2rem;margin: 10px;margin-top: 50px;">ABOUT ME</h2>
         <br>
 
-        <section class="secondsection">
+        <section id="secondsection">
 
             <div class="picsection">
                 <img src="rename.png" alt="Prince Kumar Pic">
@@ -426,7 +464,7 @@
         </section>
 
 
-        <h2 style="text-align: center;text-decoration: underline;font-size: 2rem;margin: 10px;margin-top: 100px;">Skills</h2>
+        <h2 id="Skill&Tools" style="text-align: center;text-decoration: underline;font-size: 2rem;margin: 10px;margin-top: 100px;">Skills</h2>
         <br>
         <section id="skills">
             <div class="icons">
@@ -480,7 +518,7 @@
 
 
 
-        <h1 style="text-align: center;text-decoration: underline;font-size: 2rem;margin: 10px;margin-top: 150px;">Projects</h1>
+        <h1 id="projectsection" style="text-align: center;text-decoration: underline;font-size: 2rem;margin: 10px;margin-top: 150px;">Projects</h1>
         <br>
         <section id="projects">
             <div class="project">
@@ -504,17 +542,17 @@
         </section>
 
         <br>
-        <hr style="width: 50%;margin: auto;background-color: yellowgreen;height: 2px;margin-top: 50px;">
+        <hr id="contactsection" style="width: 50%;margin: auto;background-color: yellowgreen;height: 2px;margin-top: 50px;">
 
 
         <section id="contact">
             <h2>Contact</h2>
             <p>Feel free to reach out to me through the following channels:</p>
             <div class="icons">
-                <a href="#" target="_blank"><i class="fab fa-linkedin" title="LinkedIn"></i></a>
-                <a href="#" target="_blank"><i class="fab fa-github" title="GitHub"></i></a>
-                <a href="#" target="_blank"><i class="fab fa-instagram" title="Instagram"></i></a>
-                <a href="#" target="_blank"><i class="fab fa-facebook" title="Facebook"></i></a>
+                <a href="https://www.linkedin.com/in/callmeprinceyadav/" target="_blank"><i class="fab fa-linkedin" title="LinkedIn"></i></a>
+                <a href="https://www.github.com/callmeprinceyadav" target="_blank"><i class="fab fa-github" title="GitHub"></i></a>
+                <a href="https://www.instagram.com/callmeprinceyadav/" target="_blank"><i class="fab fa-instagram" title="Instagram"></i></a>
+                <a href="mailto:pkryadav9304@gmail.com" target="_blank"><i class="fab fa-facebook" title="Facebook"></i></a>
                 <!-- Add more icons and links as needed -->
             </div>
         </section>
