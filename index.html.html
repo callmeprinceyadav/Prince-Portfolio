@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prince Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/gh/lowlighter/metrics@latest/dist/bundle.js"></script>
+
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color:  rgb(255, 253, 253);
+            color: black;
+            font-family: 'Poppins', sans-serif;
+            
+        }
+
+        nav{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            
+            background-color: rgb(231, 230, 230);
+        }
+
+        nav ul{
+            display: flex;
+            justify-content: center;
+        }
+        nav ul a{
+            text-decoration: none;
+        }
+        nav ul :hover{
+            text-decoration: none;
+            color: black;
+            font-size: 2rem;
+        }
+
+        nav ul li{
+            list-style: none;
+            margin: 0 23px;
+        }
+
+    .left{
+        font-size: 1.5rem;
+        color: black !important;
+        }
+
+
+    .firstsection{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 100px 0;
+        /* margin-bottom: 10px; */
+        flex-wrap: wrap;
+    }
+    .firstsection > div{
+        width: 30%;
+    }
+
+    .leftsection{
+        /* background-color: red; */
+        font-size: 2rem;
+        /* margin: 30px 0; */
+    }
+    .rightsection{
+        /* background-color: red; */
+        width: auto !important;
+    }
+    resume{
+        padding: 10px;
+        color: aqua;
+        font-size: 1rem;
+        border: 1px solid black !important;
+        background-color: rgb(19, 18, 18);
+        margin-top: 50px;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+    .secondsection{
+        /* border: 1px solid black!important; */
+        width: 98%;
+        height: auto;
+        display: flex;
+        margin: auto;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin: 100px 0;
+        
+    }
+    .picsection{
+        border: 2px solid brown;
+        width: 350px;
+        height: 300px;
+        border: 0.5px solid rgb(170, 167, 167);
+        border-radius: 5px;
+        padding: auto;
+        align-items: center;
+    }
+    .picsection > img{
+        width: 350px;
+        height: 300px;
+        
+    }
+    .aboutsection{
+        /* border: 2px solid green; */
+        width: 60%;
+        font-size: 1.5rem;
+    }
+
+    
+
+    .icons {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-top: 20px;
+            margin: auto;
+            width: 90%;
+        
+        }
+
+        .icons i {
+            font-size: 5em;
+            color: #333;
+            margin: 0 15px;
+            transition: color 0.9s ease;
+        }
+
+        .icons i:hover {
+            color: #007bff;
+            font-size: 8em;
+            
+        }
+
+
+        #HTML5:hover{
+            /* box-shadow: rgba(228, 85, 2, 0.918) 5px 5px; */
+            color: rgba(228, 85, 2, 0.918);
+
+        }
+        #CSS3:hover{
+            color: blue;
+            /* box-shadow: rgba(4, 50, 199, 0.4) 5px 5px; */
+
+        }
+        #JavaScript:hover{
+            color: rgba(250, 246, 3, 0.904) ;
+            /* box-shadow: rgba(250, 246, 3, 0.904) 5px 5px; */
+        }
+        #React:hover{
+            color: rgba(14, 196, 209, 0.993);
+            /* box-shadow: rgba(14, 196, 209, 0.993) 5px 5px; */
+
+        }
+
+        #Nodejs:hover{
+            color: rgb(22, 231, 74);
+            /* box-shadow: rgb(22, 231, 74) 5px 5px; */
+
+        }
+        #Python:hover{
+            color: rgb(44, 44, 161);
+            /* box-shadow: rgba(45, 86, 223, 0.4) 5px 5px; */
+        }
+
+    .tools{
+        display: flex;
+        justify-content: space-around;
+        width: 90%;
+        margin: auto;
+        /* border: 2px solid green; */
+        margin-top: 50px;
+        align-items: center;
+        flex-wrap: wrap;
+        height: auto;
+
+    }
+
+    .toolsvg{
+        
+        width: 90px;
+        height: 120px;
+        /* border: 2px solid red; */
+        padding: 5px;
+    }
+
+    .vscode:hover{
+            box-shadow: rgba(156, 152, 149, 0.918) 5px 5px;
+            /* box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px; */
+            color: rgba(156, 152, 149, 0.918);
+        }
+    .postman:hover{
+            box-shadow: rgba(228, 85, 2, 0.918) 5px 5px;
+            color: rgba(228, 85, 2, 0.918);
+        }
+    .npm:hover{
+            box-shadow: rgba(238, 15, 15, 0.918) 5px 5px;
+            color: rgba(238, 15, 15, 0.918);
+        }
+    .git:hover{
+            box-shadow: rgba(0, 0, 0, 0.918) 5px 5px;
+            color: rgba(228, 85, 2, 0.918);
+        }
+        
+    .netlify:hover{
+            box-shadow: rgba(85, 240, 14, 0.918) 5px 5px;
+            color: rgba(228, 85, 2, 0.918);
+        }
+    .babel:hover{
+            box-shadow: rgba(255, 230, 2, 0.986) 5px 5px;
+            color: rgba(255, 230, 2, 0.986);
+        }
+
+        .github-stats {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            margin-top: 20px;
+            flex-wrap: wrap;    
+            width: 90%;
+            margin: auto;
+        }
+
+        .github-stats img {
+            width: 100%;
+            max-width: 600px;
+        }
+    
+        #projects{
+            display: flex;
+            /* border: 2px solid red; */
+            width: 90%;
+            height: auto;
+            justify-content: space-around;
+            margin: auto;
+            padding: 10px;
+            
+        }
+
+        .project{
+            width: 40%;
+            /* border: 2px solid green; */
+            padding: 10px;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+            
+
+            }
+
+        .project >img{
+            width: 100%;
+            height: auto;
+            /* border: 2px solid green; */
+
+            }
+
+        #websitename{
+            margin-bottom: 10px;
+        }
+
+        live{
+            padding: 10px;
+            color: white;
+            font-size: 15px;
+            border: 1px solid black !important;
+            background-color: rgb(19, 18, 18);
+            border-radius: 5px;
+            cursor: pointer;
+                }
+
+
+        demo{
+                padding: 5px;
+                
+                color: white;
+                font-size: 1.2rem;
+                border: 1px solid black !important;
+                background-color: rgb(245, 241, 241);
+                /* margin-top: 50px; */
+                border-radius: 5px;
+                cursor: pointer;
+            }
+
+    #contact{
+        padding: 10px;
+        text-align: center;
+        margin: auto;
+    }
+
+    #contact > .icons i {
+        font-size: 3rem;
+    }
+
+    
+        
+
+    footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 15px;
+        }
+
+
+
+
+
+        @media screen and (max-width: 700px) {
+
+            main{
+                margin-left: 5px;
+            }
+
+            nav{
+                display: none;
+            }
+
+            .left{
+                display: none;
+            }
+            .right{
+                display: none;
+            }
+
+
+            .leftsection{
+                font-size: 15px;
+            }
+            .rightsection > img {
+                width: 20%;
+            }
+
+            #resume{
+                margin-top: 20px;
+                margin-bottom: 20px;
+    }
+
+    
+}
+
+
+
+        
+
+
+
+
+
+    </style>
+
+
+
+
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">Prince's Portfolio</div>
+            <div class="right">
+                <ul>
+                        <li><a href="/home">Home</a></li>
+                        <li><a href="/">About</a></li>
+                        <li><a href="/">Skills</a></li>
+                        <li><a href="/">Projects</a></li>
+                        <li><a href="/">Contact</a></li>
+                    
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstsection">
+
+            <div class="leftsection">
+                <h2>  Hi, i'm  </h2>
+                <h1 style="color: rgb(199, 53, 199);"><strong>Prince Kumar</strong></h1>
+                <div>
+                    <!-- Element to contain animated typing -->
+                    <span id="element"></span>
+                </div>
+                <div id="resume">
+                    <resume  style="margin-bottom: 20px;" >Resume</resume>
+                </div>
+                
+            </div>
+            <div class="rightsection">
+                <img style="width: 80%;border-radius: 50%;border: 1px solid rgb(141, 138, 138);" src="https://mail.google.com/mail/u/1?ui=2&ik=b741f47fc8&attid=0.1&permmsgid=msg-a:r-3811469012740720163&th=18d18d9588817589&view=att&disp=safe&realattid=f_lri5x2yg0" alt="Prince Kumar Pic">
+            </div>
+            
+        </section>
+
+        <h2 style="text-align: center;text-decoration: underline;font-size: 2rem;margin: 10px;margin-top: 50px;">ABOUT ME</h2>
+        <br>
+
+        <section class="secondsection">
+
+            <div class="picsection">
+                <img src="https://mail.google.com/mail/u/1?ui=2&ik=b741f47fc8&attid=0.1&permmsgid=msg-a:r-3811469012740720163&th=18d18d9588817589&view=att&disp=safe&realattid=f_lri5x2yg0" alt="Prince Kumar Pic">
+            </div>
+            <div class="aboutsection">
+
+                <p>Hi, i'm <span id="name" style="color: aquamarine;"><strong>Prince Kumar</strong></span></p>
+                
+                <br>
+                <p>I am Student Of Class 12th From +2 Govt H/S R.P.S College at Ekangarsarai,
+                    Passionate about improving my coding skills and developing native applications, I am currently focused on building web applications, especially in the native field. As a self-driven individual, I am dedicated to enhancing my skills and enjoy working on Full-Stack clones. Looking forward to continuous growth and learning in the field of technology.
+                    
+                </p>
+
+            </div>
+            
+        </section>
+
+
+        <h2 style="text-align: center;text-decoration: underline;font-size: 2rem;margin: 10px;margin-top: 100px;">Skills</h2>
+        <br>
+        <section id="skills">
+            <div class="icons">
+                <i class="fab fa-html5" title="HTML5" id="HTML5"></i>
+                <i class="fab fa-css3" title="CSS3" id="CSS3"></i>
+                <i class="fab fa-js" title="JavaScript" id="JavaScript"></i>
+                <i class="fab fa-react" title="React" id="React"></i>
+                <i class="fab fa-node" title="Node.js" id="Node.js"></i>
+                <i class="fab fa-python" title="Python" id="Python"></i>
+                <!-- Add more icons for your specific skills -->
+            </div>
+        </section>
+
+        <h2 style="text-align: center;text-decoration: underline;font-size: 2rem;margin: 10px;margin-top: 100px;">Tools</h2>
+        <br>
+        <section id="tools">
+            <div class="tools">
+                <div class="vscode" >
+                    <img class="toolsvg" src="https://www.svgrepo.com/show/342347/visual-studio-code.svg">
+                </div>
+                <div class="netlify">
+                    <img class="toolsvg" src="https://www.svgrepo.com/show/369452/netlify.svg">
+                </div>
+                <div class="postman">
+                    <img class="toolsvg" src="https://www.svgrepo.com/show/306590/postman.svg">
+                </div>
+                <div class="git">
+                    <img class="toolsvg" src="https://www.svgrepo.com/show/516636/git.svg">
+                </div>
+                <div class="babel">
+                    <img class="toolsvg" src="https://www.svgrepo.com/show/330023/babel.svg">
+                </div>
+                <div class="npm">
+                    <img class="toolsvg" src="https://www.svgrepo.com/show/445925/npm.svg">
+                </div>
+                
+                <!-- Add more icons for your specific skills -->
+            </div>
+        </section>
+
+        <h2 style="text-align: center;text-decoration: underline;font-size: 2rem;margin: 10px;margin-top: 150px;">Github Stat's</h2>
+        <br>
+        <!-- GitHub Stats Section -->
+        <section class="github-stats">
+            
+            <!-- Add your GitHub stats image or embed GitHub stats widget here -->
+            <img src="https://github-readme-stats.vercel.app/api?username=callmeprinceyadav&show_icons=true&theme=dark" alt="GitHub Stats">
+        
+            <img src="https://github-readme-streak-stats.herokuapp.com/?user= callmeprinceyadav" alt="GitHub Streak Stats">
+        </section>
+
+
+
+        <h1 style="text-align: center;text-decoration: underline;font-size: 2rem;margin: 10px;margin-top: 150px;">Projects</h1>
+        <br>
+        <section id="projects">
+            <div class="project">
+                <img src="https://mail.google.com/mail/u/0?ui=2&ik=0df650116d&attid=0.1&permmsgid=msg-a:r5996878806694658497&th=18d18df6653ab0f9&view=att&disp=safe&realattid=f_lri65r3o0">
+                <div class="status">
+                    <h3 id="websitename">BeautyBebo</h3>
+                    <live>Live</live>
+                    <demo><a href="#" target="_blank"><i class="fab fa-github" title="GitHub"></i></a></demo>
+                </div>
+            </div>
+            <div class="project">
+                <img src="https://mail.google.com/mail/u/0?ui=2&ik=0df650116d&attid=0.1&permmsgid=msg-a:r5996878806694658497&th=18d18df6653ab0f9&view=att&disp=safe&realattid=f_lri65r3o0">
+                <div class="status">
+                    <h3 id="websitename">BeautyBebo</h3>
+                    <live><a href="https://beauty-beboo.netlify.app/" target="_blank">Live</a></live>
+                    <demo><a href="https://github.com/callmeprinceyadav/Beauty.bebo" target="_blank"><i class="fab fa-github" title="GitHub"></i></a></demo>
+
+                </div>
+            </div>
+            <!-- Add your projects with descriptions and links here -->
+        </section>
+
+        <br>
+        <hr style="width: 50%;margin: auto;background-color: yellowgreen;height: 2px;margin-top: 50px;">
+
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Feel free to reach out to me through the following channels:</p>
+            <div class="icons">
+                <a href="#" target="_blank"><i class="fab fa-linkedin" title="LinkedIn"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-github" title="GitHub"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-instagram" title="Instagram"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-facebook" title="Facebook"></i></a>
+                <!-- Add more icons and links as needed -->
+            </div>
+        </section>
+
+
+    </section>
+
+    </main>
+    <footer>
+        <p>&copy; 2024 Your Full Stack Developer Portfolio. All rights reserved.</p>
+    </footer>
+
+
+
+    <!-- Load library from the CDN -->
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+  <!-- Setup and start animation! -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+    const menuBtn = document.querySelector('.menu-btn');
+    const hamburger = document.querySelector('.hamburger');
+    const menu = document.querySelector('.menu');
+
+    menuBtn.addEventListener('click', function () {
+        hamburger.classList.toggle('active');
+        menu.classList.toggle('show');
+            });
+        });
+
+    var typed = new Typed('#element', {
+      strings: ['<i>A Passionate Web Developer</i>'],
+      typeSpeed: 100,
+    });
+    var typed = new Typed('#name', {
+      strings: ['Prince Kumar'],
+      typeSpeed: 150,
+    });
+  </script>
+    
+</body>
+</html>
