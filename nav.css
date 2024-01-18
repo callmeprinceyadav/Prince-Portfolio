@@ -1,26 +1,43 @@
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
+
 body {
     font-family: "Poppins", sans-serif;
-    --color1: #FFF ;
-    --color2: #b9b1b1 ;
+    --color1: #FFF;
+    --color2: #b9b1b1;
+    margin: 0; /* Add this to remove default body margin */
 }
+
 .nav-bar {
     width: 100%;
+    margin-bottom: 20px;
+    flex-wrap: wrap; 
     display: flex;
     justify-content: space-around;
     align-items: center;
     list-style: none;
-    position: relative;
+    position: fixed; /* Make the navbar fixed */
+    top: 0; /* Stick it to the top of the viewport */
     background-color: var(--color2);
     padding: 12px 20px;
+    z-index: 1000; /* Add a z-index to ensure it appears above other content */
 }
-.logo img {width: 40px;}
-.menu {display: flex;}
-.menu li {padding-left: 30px;}
+
+.logo img {
+    width: 40px;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu li {
+    padding-left: 30px;
+}
+
 .menu li a {
     display: inline-block;
     text-decoration: none;
@@ -30,6 +47,7 @@ body {
     position: relative;
     text-transform: uppercase;
 }
+
 .menu li a::after {
     content: "";
     position: absolute;
@@ -40,25 +58,36 @@ body {
     background-color: var(--color1);
     transition: 0.15s ease-in-out;
 }
-.menu li a:hover:after {width: 100%;}
-.open-menu , .close-menu {
+
+.menu li a:hover:after {
+    width: 100%;
+}
+
+.open-menu,
+.close-menu {
     position: absolute;
     color: var(--color1);
     cursor: pointer;
     font-size: 1.5rem;
     display: none;
 }
+
 .open-menu {
     top: 50%;
     right: 20px;
     transform: translateY(-50%);
 }
+
 .close-menu {
     top: 20px;
     right: 20px;
 }
-#check {display: none;}
-@media(max-width: 700px){
+
+#check {
+    display: none;
+}
+
+@media (max-width: 700px) {
     .menu {
         flex-direction: column;
         align-items: center;
@@ -72,8 +101,21 @@ body {
         background-color: var(--color2);
         transition: all 0.5s ease-in-out;
     }
-    .menu li {margin-top: 40px;}
-    .menu li a {padding: 10px;}
-    .open-menu , .close-menu {display: block;}
-    #check:checked ~ .menu {right: 0;}
+
+    .menu li {
+        margin-top: 40px;
+    }
+
+    .menu li a {
+        padding: 10px;
+    }
+
+    .open-menu,
+    .close-menu {
+        display: block;
+    }
+
+    #check:checked ~ .menu {
+        right: 0;
+    }
 }
