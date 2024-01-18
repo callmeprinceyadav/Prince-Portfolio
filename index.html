@@ -9,6 +9,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <script src="https://cdn.jsdelivr.net/gh/lowlighter/metrics@latest/dist/bundle.js"></script>
+    <link rel="stylesheet" href="./nav.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
     <style>
@@ -23,33 +25,7 @@
             
         }
 
-        nav{
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            height: 80px;
-            
-            background-color: rgb(231, 230, 230);
-        }
-
-        nav ul{
-            display: flex;
-            justify-content: center;
-        }
-        nav ul a{
-            text-decoration: none;
-        }
-        nav ul :hover{
-            text-decoration: none;
-            color: black;
-            font-size: 2rem;
-        }
-
-        nav ul li{
-            list-style: none;
-            margin: 0 23px;
-        }
-
+       
     .left{
         font-size: 1.5rem;
         color: black !important;
@@ -58,7 +34,7 @@
 
     .firstsection{
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-around;
         align-items: center;
         margin: 100px 0;
         /* margin-bottom: 10px; */
@@ -239,6 +215,7 @@
         .github-stats img {
             width: 100%;
             max-width: 600px;
+            margin: 10px;
         }
     
         #projects{
@@ -332,42 +309,31 @@
                 margin: 5px;
             }
 
-            nav{
-                display: none;
-            }
 
-            .left{
-                /* font-size: 5px; */
-                display: none;
-            }
             .firstsection{
+                /* border : 1px solid  red; */
+                margin: 20px;
                 display: flex;
-                /* margin: auto; */
-                /* border: 2px solid red; */
-                width: 80%;
-                justify-content: space-evenly;
-                margin-left: 10px;
-                padding-left: 15%;
-            }
-            .firstsections > div{
-                width: 40%;
-                border: 2px solid black;
             }
 
             .leftsection{
-                font-size: 1rem;
-                text-align: left;
+                font-size: 12px;
+                padding: 5px;
             }
-            .rightsection {
-                margin: auto;
-                width: 30%;
-                /* border: 2px solid green; */
-                
+
+           
+            .rightsection > img{
+                width: 100%;
+
             }
 
             .picsection{
-                width: 70%;
+                width: 60%;
                 height: 75%;
+                border-radius: 15px;
+                margin: auto;
+                margin-top: -10%;
+                margin-bottom: 10px;
             }
 
             .picsection>img{
@@ -379,11 +345,29 @@
             #resume{
                 margin-top: 20px;
                 margin-bottom: 20px;
-    }
+                }
 
     .aboutsection{
         padding: 0;
         font-size: 15px;
+    }
+
+
+    #projects{
+            display: flex;
+            /* border: 2px solid red; */
+            flex-direction: column;
+            width: 90%;
+            height: auto;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+            padding: 10px;
+            
+        }
+    .project{
+        width: auto;
+        margin: 10px;
     }
 
     
@@ -405,19 +389,34 @@
 </head>
 <body>
     <header>
-        <nav>
-            <div class="left">Prince's Portfolio</div>
+        <!-- <nav>
+            
             <div class="right">
                 <ul>
+                        
+                    
+                </ul>
+            </div>
+        </nav> -->
+        <header>
+            <nav>
+                
+                <ul class='nav-bar'>
+                    <div class="left">Prince's Portfolio</div>
+                    <!-- <li class='logo'><a href='#'><img src='./images/logo.png'/></a></li> -->
+                    <input type='checkbox' id='check' />
+                    <span class="menu">
                         <li><a href="#">Home</a></li>
                         <li><a href="#about">About</a></li>
                         <li><a href="#Skill&Tools">Skills</a></li>
                         <li><a href="#projectsection">Projects</a></li>
                         <li><a href="#contactsection">Contact</a></li>
-                    
+                        <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+                    </span>
+                    <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
                 </ul>
-            </div>
-        </nav>
+            </nav>
+            </header>
     </header>
 
     <main>
