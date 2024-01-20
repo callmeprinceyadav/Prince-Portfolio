@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <script src="https://cdn.jsdelivr.net/gh/lowlighter/metrics@latest/dist/bundle.js"></script>
     <link rel="stylesheet" href="./nav.css">
+
+    <link rel="stylesheet" href="boxicons.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
@@ -19,7 +22,7 @@
             padding: 0;
         }
         body{
-            background-color:  rgb(255, 253, 253);
+            background-color:  rgb(240, 243, 243);
             color: black;
             font-family: 'Poppins', sans-serif;
             
@@ -34,14 +37,14 @@
 
     .firstsection{
         display: flex;
-        justify-content: space-around;
+        justify-content: space-evenly;
         align-items: center;
-        margin: 100px 0;
+        margin: 150px 0;
         flex-wrap: wrap;
         /* margin: auto; */
     }
     .firstsection > div{
-        width: 25%;
+        width: 30%;
         /* border: 2px solid green; */
     }
 
@@ -70,6 +73,7 @@
                 /* border: 2px solid gray; */
                 width: auto;
                 margin-top: 5px;
+                margin-left: 10px;
             }
 
     #secondsection{
@@ -107,9 +111,9 @@
         text-align: center;
         text-decoration: underline;
         font-size: 2rem;
-        margin-top: 100px;
+        margin-top: 200px;
         /* border: 2px solid red; */
-        color: linear-gradient(to right, #8b0885, #ADD8E6);
+        color:#757bb6;
     }
 
     .icons {
@@ -321,21 +325,28 @@
             }
 
 
+
             .firstsection{
-                /* border : 1px solid  red; */
-                margin-top: 100px;
-                display: flex;
+                        display: flex;
+                        justify-content: space-around;
+                        align-items: center;
+                        margin: 120px 0;
+                        flex-wrap: wrap;
+                        /* margin: auto; */
+                    }
+            .firstsection > div{
+                width: 40%;
+                /* border: 2px solid green; */
             }
 
             .leftsection{
-                font-size: 10px;
-                padding: 5px;
+                /* background-color: red; */
+                font-size: 1rem;
+                /* margin: 30px 0; */
             }
-
-           
-            .rightsection > img{
-                width: 100%;
-
+            .rightsection{
+                /* background-color: red; */
+                width: 50%;
             }
 
             .picsection{
@@ -372,7 +383,17 @@
     }
 
     heading > h2{
+        text-align: center;
+        text-decoration: underline;
         font-size: 1rem;
+        margin-top: 100px;
+        /* border: 2px solid red; */
+        color:#757bb6;
+    }
+
+
+    #about{
+        margin-top: -30px;
     }
 
 
@@ -422,17 +443,8 @@
 
 </head>
 <body>
+    
     <header>
-        <!-- <nav>
-            
-            <div class="right">
-                <ul>
-                        
-                    
-                </ul>
-            </div>
-        </nav> -->
-        <header>
             <nav>
                 
                 <ul class='nav-bar'>
@@ -454,6 +466,7 @@
     </header>
 
     <main>
+        
         <section class="firstsection">
 
             <div class="leftsection">
@@ -467,11 +480,14 @@
                     <resume  style="margin-bottom: 20px;" ><a href="Prince_Kumar-Cap04_103-FrontendDeveloper.pdf" download="Prince_Kumar_Resume.pdf" class="resume">Resume</a></resume>
                 </div>
                     <div class="contacticon">
-                        <a style="color: rgb(48, 48, 248);font-size: 2rem;padding-right: 2px;"
-                        href="https://www.linkedin.com/in/callmeprinceyadav/" target="_blank"><i class="fab fa-linkedin" title="LinkedIn"></i></a>
+                        <a style="color: rgb(48, 48, 248);font-size: 2.5rem;padding-right: 2px;"
+                        href="https://www.linkedin.com/in/callmeprinceyadav/" target="_blank"><i class='bx bxl-linkedin bx-tada' ></i></a>
                     
-                        <a style="color:#6e5494;font-size: 2rem;"
-                        href="https://www.github.com/callmeprinceyadav" target="_blank"><i class="fab fa-github" title="GitHub"></i></a>
+                        <a style="color:#6e5494;font-size: 2.5rem;"
+                        href="https://www.github.com/callmeprinceyadav" target="_blank"><i class='bx bxl-github bx-tada bx-flip-vertical' ></i></a>
+
+                        <a style="color:#ca2170;font-size: 2.5rem;"
+                        href="https://www.instagram.com/callmeprinceyadav" target="_blank"><i class='bx bxl-instagram bx-tada bx-flip-vertical' ></i></a>
                     </div>
             </div>
             <div class="rightsection">
@@ -495,12 +511,14 @@
                 <p>Hi, i'm <span id="name" style="color: aquamarine;"><strong>Prince Kumar</strong></span></p>
                 
                 <br>
+                
                 <p>I am Student Of Class 12th From +2 Govt H/S R.P.S College ,
-                    Passionate about improving my coding skills and developing native applications, I am currently focused on building web applications, especially in the native field. As a self-driven individual, I am dedicated to enhancing my skills and enjoy working on Full-Stack clones. Looking forward to continuous growth and learning in the field of technology.
+                    Passionate about improving my coding skills and developing native applications, I am currently focused on building web applications, especially in the native field. As a self-driven individual, <divv id="Skill&Tools"></divv>I am dedicated to enhancing my skills and enjoy working on Full-Stack clones. Looking forward to continuous growth and learning in the field of technology.
                     
                 </p>
 
             </div>
+            
             
         </section>
 
@@ -510,7 +528,7 @@
             <br>
         </heading>
 
-
+<section>
         <section id="skills">
             <div class="icons">
                 <i class="fab fa-html5" title="HTML5" id="HTML5"></i>
@@ -520,6 +538,7 @@
                 <i class="fab fa-node" title="Node.js" id="Node.js"></i>
                 <i class="fab fa-python" title="Python" id="Python"></i>
                 <!-- Add more icons for your specific skills -->
+                
             </div>
         </section>
 
@@ -551,7 +570,7 @@
                 <!-- Add more icons for your specific skills -->
             </div>
         </section>
-
+</section>
         <heading>
             <h2 id="github-stats">Github Stat's</h2>
             <br>
@@ -563,6 +582,7 @@
             <img src="https://github-readme-stats.vercel.app/api?username=callmeprinceyadav&show_icons=true&theme=dark" alt="GitHub Stats">
         
             <img src="https://github-readme-streak-stats.herokuapp.com/?user= callmeprinceyadav" alt="GitHub Streak Stats">
+            <div id="projectsection"></div>
         </section>
 
 
