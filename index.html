@@ -11,6 +11,7 @@
     <script src="https://cdn.jsdelivr.net/gh/lowlighter/metrics@latest/dist/bundle.js"></script>
     <link rel="stylesheet" href="./nav.css">
 
+
     <link rel="stylesheet" href="boxicons.min.css">
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -20,6 +21,29 @@
         *{
             margin: 0;
             padding: 0;
+        }
+        body {
+            transition: background-color 0.3s, color 0.3s;
+        }
+        body.light-mode {
+            background-color: #e9ecef;
+            color: black;
+        }
+        body.dark-mode {
+            background-color: #2e2e2e;
+            color: white;
+        }
+        .theme-toggle {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            background: #007bff;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
         }
         body{
             background-color:  #e9ecef;
@@ -449,7 +473,7 @@
                 
                 <ul class='nav-bar'>
                     <div class="left">Prince's Portfolio</div>
-                    <!-- <li class='logo'><a href='#'><img src='./images/logo.png'/></a></li> -->
+                    
                     <input type='checkbox' id='check' />
                     <span class="menu">
                         <li><a href="#">Home</a></li>
@@ -594,11 +618,11 @@
         </heading>
         <section id="projects">
             <div class="project">
-                <img src="omdb.jpg">
+                <img src="blue.png">
                 <div class="status">
-                    <h3 id="websitename">Omdb Movies</h3>
-                    <live>Live</live>
-                    <demo><a href="#" target="_blank"><i class="fab fa-github" title="GitHub"></i></a></demo>
+                    <h3 id="websitename">Bluefly</h3>
+                    <live><a href="https://bluefly-check.netlify.app/" target="_blank">Live</a></live>
+                    <demo><a href="https://github.com/callmeprinceyadav/BlueFly" target="_blank"><i class="fab fa-github" title="GitHub"></i></a></demo>
                 </div>
             </div>
             <div class="project">
@@ -641,6 +665,7 @@
 
     <!-- Load library from the CDN -->
   <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script src="themesript.js"></script>
 
   <!-- Setup and start animation! -->
   <script>
