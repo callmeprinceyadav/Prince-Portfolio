@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,25 +15,31 @@
 
     <link rel="stylesheet" href="boxicons.min.css">
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
     <style>
-        *{
+        * {
             margin: 0;
             padding: 0;
         }
+
         body {
             transition: background-color 0.3s, color 0.3s;
         }
+
         body.light-mode {
             background-color: #e9ecef;
             color: black;
         }
+
         body.dark-mode {
             background-color: #2e2e2e;
             color: white;
         }
+
         .theme-toggle {
             position: fixed;
             top: 10px;
@@ -45,102 +52,109 @@
             cursor: pointer;
             font-size: 1rem;
         }
-        body{
-            background-color:  #e9ecef;
+
+        body {
+            background-color: #e9ecef;
             color: black;
             font-family: 'Poppins', sans-serif;
-            
-        }
 
-       
-    .left{
-        font-size: 1.5rem;
-        color: black !important;
         }
 
 
-    .firstsection{
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        margin: 150px 0;
-        flex-wrap: wrap;
-        /* margin: auto; */
-    }
-    .firstsection > div{
-        width: 30%;
-        /* border: 2px solid green; */
-    }
+        .left {
+            font-size: 1.5rem;
+            color: black !important;
+        }
 
-    .leftsection{
-        /* background-color: red; */
-        font-size: 2rem;
-        /* margin: 30px 0; */
-    }
-    .rightsection{
-        /* background-color: red; */
-        width: 50%;
-    }
-    .resume{
-        padding: 10px;
-        color: aqua;
-        font-size: 1rem;
-        border: 1px solid black !important;
-        background-color: rgb(19, 18, 18);
-        margin-top: 50px;
-        border-radius: 10px;
-        cursor: pointer;
-        text-decoration: none;
-    }
 
-    .contacticon {
-                /* border: 2px solid gray; */
-                width: auto;
-                margin-top: 5px;
-                margin-left: 10px;
-            }
+        .firstsection {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            margin: 150px 0;
+            flex-wrap: wrap;
+            /* margin: auto; */
+        }
 
-    #secondsection{
-        /* border: 1px solid black!important; */
-        width: 98%;
-        height: auto;
-        display: flex;
-        margin: auto;
-        justify-content: space-around;
-        flex-wrap: wrap;
-        margin: 100px 0;  
-        
-    }
-    .picsection{
-        border: 2px solid brown;
-        width: 300px;
-        height: 280px;
-        border: 0.5px solid rgb(170, 167, 167);
-        border-radius: 5px;
-        padding: auto;
-        align-items: center;
-    }
-    .picsection > img{
-        width: 100%;
-        height: 100%;
-        
-    }
-    .aboutsection{
-        /* border: 2px solid green; */
-        width: 60%;
-        font-size: 1.5rem;
-    }
+        .firstsection>div {
+            width: 30%;
+            /* border: 2px solid green; */
+        }
 
-    heading > h2{
-        text-align: center;
-        text-decoration: underline;
-        font-size: 2rem;
-        margin-top: 200px;
-        /* border: 2px solid red; */
-        color:#757bb6;
-    }
+        .leftsection {
+            /* background-color: red; */
+            font-size: 2rem;
+            /* margin: 30px 0; */
+        }
 
-    .icons {
+        .rightsection {
+            /* background-color: red; */
+            width: 50%;
+        }
+
+        .resume {
+            padding: 10px;
+            color: aqua;
+            font-size: 1rem;
+            border: 1px solid black !important;
+            background-color: rgb(19, 18, 18);
+            margin-top: 50px;
+            border-radius: 10px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .contacticon {
+            /* border: 2px solid gray; */
+            width: auto;
+            margin-top: 5px;
+            margin-left: 10px;
+        }
+
+        #secondsection {
+            /* border: 1px solid black!important; */
+            width: 98%;
+            height: auto;
+            display: flex;
+            margin: auto;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 100px 0;
+
+        }
+
+        .picsection {
+            border: 2px solid brown;
+            width: 300px;
+            height: 280px;
+            border: 0.5px solid rgb(170, 167, 167);
+            border-radius: 5px;
+            padding: auto;
+            align-items: center;
+        }
+
+        .picsection>img {
+            width: 100%;
+            height: 100%;
+
+        }
+
+        .aboutsection {
+            /* border: 2px solid green; */
+            width: 60%;
+            font-size: 1.5rem;
+        }
+
+        heading>h2 {
+            text-align: center;
+            text-decoration: underline;
+            font-size: 2rem;
+            margin-top: 200px;
+            /* border: 2px solid red; */
+            color: #757bb6;
+        }
+
+        .icons {
             display: flex;
             justify-content: space-evenly;
             align-items: center;
@@ -148,7 +162,8 @@
             margin-top: 10px;
             margin: auto;
             width: 90%;
-        
+            grid-template-columns: auto;
+
         }
 
         .icons i {
@@ -161,84 +176,124 @@
         .icons i:hover {
             color: #007bff;
             font-size: 8em;
-            
+
         }
 
 
-        #HTML5:hover{
+        #HTML5:hover {
             /* box-shadow: rgba(228, 85, 2, 0.918) 5px 5px; */
             color: rgba(228, 85, 2, 0.918);
 
         }
-        #CSS3:hover{
+
+        #CSS3:hover {
             color: blue;
             /* box-shadow: rgba(4, 50, 199, 0.4) 5px 5px; */
 
         }
-        #JavaScript:hover{
-            color: rgba(250, 246, 3, 0.904) ;
+
+        #JavaScript:hover {
+            color: rgba(250, 246, 3, 0.904);
             /* box-shadow: rgba(250, 246, 3, 0.904) 5px 5px; */
         }
-        #React:hover{
+
+        #React:hover {
             color: rgba(14, 196, 209, 0.993);
             /* box-shadow: rgba(14, 196, 209, 0.993) 5px 5px; */
 
         }
 
-        #Nodejs:hover{
+        #Nodejs:hover {
             color: rgb(10, 228, 65);
             /* box-shadow: rgb(22, 231, 74) 5px 5px; */
 
         }
-        #Python:hover{
+
+        #Python:hover {
             color: rgb(44, 44, 161);
             /* box-shadow: rgba(45, 86, 223, 0.4) 5px 5px; */
         }
 
-    .tools{
-        display: flex;
-        justify-content: space-around;
-        width: 90%;
-        margin: auto;
-        /* border: 2px solid green; */
-        margin-top: 10px;
-        align-items: center;
-        flex-wrap: wrap;
-        height: auto;
+        /* .tools {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr); /* Three columns with equal width */
+        /* justify-content: center;
+            width: 90%;
+            margin: auto;
+            border: 2px solid green;
+            margin-top: 10px;
+            align-items: center;
+            flex-wrap: wrap;
+            height: auto;
+            
 
-    }
+        } */
 
-    .toolsvg{
-        
-        width: 90px;
-        height: 120px;
-        /* border: 2px solid red; */
-        padding: 5px;
-    }
+        /* .toolsvg {
 
-    .vscode:hover{
+            width: 90px;
+            height: 120px;
+            border: 2px solid red;
+            padding: 5px;
+        }  */
+
+        .tools {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            /* Three columns with equal width */
+            justify-content: center;
+            /* Center align horizontally */
+            padding: 10px;
+            width: 90%;
+            margin: auto;
+            /* border: 2px solid green; */
+            margin-top: 10px;
+            align-items: center;
+            gap: 20px;
+            /* Gap between grid items */
+        }
+
+        .tools>div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+            /* Adjust margin bottom as needed */
+        }
+
+        .toolsvg {
+            width: 100px;
+            /* Adjust size of icons */
+        }
+
+
+        .vscode:hover {
             box-shadow: rgba(156, 152, 149, 0.918) 5px 5px;
             /* box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px; */
             color: rgba(156, 152, 149, 0.918);
         }
-    .postman:hover{
+
+        .postman:hover {
             box-shadow: rgba(228, 85, 2, 0.918) 5px 5px;
             color: rgba(228, 85, 2, 0.918);
         }
-    .npm:hover{
+
+        .npm:hover {
             box-shadow: rgba(238, 15, 15, 0.918) 5px 5px;
             color: rgba(238, 15, 15, 0.918);
         }
-    .git:hover{
+
+        .git:hover {
             box-shadow: rgba(0, 0, 0, 0.918) 5px 5px;
             color: rgba(228, 85, 2, 0.918);
         }
-        
-    .netlify:hover{
+
+        .netlify:hover {
             box-shadow: rgba(85, 240, 14, 0.918) 5px 5px;
             color: rgba(228, 85, 2, 0.918);
         }
-    .babel:hover{
+
+        .babel:hover {
             box-shadow: rgba(255, 230, 2, 0.986) 5px 5px;
             color: rgba(255, 230, 2, 0.986);
         }
@@ -248,7 +303,7 @@
             align-items: center;
             justify-content: space-around;
             margin-top: 20px;
-            flex-wrap: wrap;    
+            flex-wrap: wrap;
             width: 90%;
             margin: auto;
         }
@@ -258,8 +313,8 @@
             max-width: 600px;
             margin: 10px;
         }
-    
-        #projects{
+
+        #projects {
             display: flex;
             /* border: 2px solid red; */
             width: 90%;
@@ -267,30 +322,30 @@
             justify-content: space-around;
             margin: auto;
             padding: 10px;
-            
+
         }
 
-        .project{
+        .project {
             width: 40%;
             /* border: 2px solid green; */
             padding: 10px;
             box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-            
 
-            }
 
-        .project >img{
+        }
+
+        .project>img {
             width: 100%;
             height: auto;
             /* border: 2px solid green; */
 
-            }
+        }
 
-        #websitename{
+        #websitename {
             margin-bottom: 10px;
         }
 
-        live{
+        live {
             padding: 10px;
             color: white;
             font-size: 15px;
@@ -299,38 +354,38 @@
             border-radius: 5px;
             cursor: pointer;
 
-                }
+        }
 
-        live a{
+        live a {
             text-decoration: none;
             color: white;
         }
 
-        demo{
-                padding: 5px;
-                padding-right: 20px;
-                padding-left: 15px;
-                color: white;
-                font-size: 1.2rem;
-                border: 1px solid black !important;
-                background-color: rgb(245, 241, 241);
-                /* margin-top: 50px; */
-                border-radius: 5px;
-                cursor: pointer;
-            }
+        demo {
+            padding: 5px;
+            padding-right: 20px;
+            padding-left: 15px;
+            color: white;
+            font-size: 1.2rem;
+            border: 1px solid black !important;
+            background-color: rgb(245, 241, 241);
+            /* margin-top: 50px; */
+            border-radius: 5px;
+            cursor: pointer;
+        }
 
-    #contact{
-        padding: 10px;
-        text-align: center;
-        margin: auto;
-    }
+        #contact {
+            padding: 10px;
+            text-align: center;
+            margin: auto;
+        }
 
-    #contact > .icons i {
-        font-size: 3rem;
-    }
+        #contact>.icons i {
+            font-size: 3rem;
+        }
 
 
-    footer {
+        footer {
             background: #333;
             color: #fff;
             text-align: center;
@@ -344,36 +399,38 @@
 
         @media screen and (max-width: 700px) {
 
-            main{
+            main {
                 margin: 5px;
             }
 
 
 
-            .firstsection{
-                        display: flex;
-                        justify-content: space-around;
-                        align-items: center;
-                        margin: 120px 0;
-                        flex-wrap: wrap;
-                        /* margin: auto; */
-                    }
-            .firstsection > div{
+            .firstsection {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                margin: 120px 0;
+                flex-wrap: wrap;
+                /* margin: auto; */
+            }
+
+            .firstsection>div {
                 width: 40%;
                 /* border: 2px solid green; */
             }
 
-            .leftsection{
+            .leftsection {
                 /* background-color: red; */
                 font-size: 1rem;
                 /* margin: 30px 0; */
             }
-            .rightsection{
+
+            .rightsection {
                 /* background-color: red; */
                 width: 50%;
             }
 
-            .picsection{
+            .picsection {
                 width: 60%;
                 height: 75%;
                 border-radius: 15px;
@@ -382,142 +439,168 @@
                 margin-bottom: 10px;
             }
 
-            .picsection>img{
+            .picsection>img {
                 margin: auto;
                 width: 100%;
                 height: 100%;
             }
 
-            #resume{
+            #resume {
                 margin-top: 20px;
                 margin-bottom: 10px;
-                }
-            
-            
-            .contacticon{
+            }
+
+
+            .contacticon {
                 /* border: 2px solid gray; */
                 width: auto;
                 /* margin-top: 2px; */
             }
 
 
-    .aboutsection{
-        padding: 0;
-        font-size: 15px;
-    }
+            .aboutsection {
+                padding: 0;
+                font-size: 15px;
+            }
 
-    heading > h2{
-        text-align: center;
-        text-decoration: underline;
-        font-size: 1rem;
-        margin-top: 100px;
-        /* border: 2px solid red; */
-        color:#757bb6;
-    }
-
-
-    #about{
-        margin-top: -30px;
-    }
+            heading>h2 {
+                text-align: center;
+                text-decoration: underline;
+                font-size: 1rem;
+                margin-top: 100px;
+                /* border: 2px solid red; */
+                color: #757bb6;
+            }
 
 
-    #projects{
-            display: flex;
-            /* border: 2px solid red; */
-            flex-direction: column;
+            #about {
+                margin-top: -30px;
+            }
+
+
+            #projects {
+                display: flex;
+                /* border: 2px solid red; */
+                flex-direction: column;
+                width: 90%;
+                height: auto;
+                justify-content: center;
+                align-items: center;
+                margin: auto;
+                padding: 10px;
+
+            }
+
+            .resume {
+                padding: 10px;
+                color: aqua;
+                font-size: 0.5rem;
+                border: 1px solid black !important;
+                background-color: rgb(19, 18, 18);
+                margin-top: 50px;
+                border-radius: 10px;
+                cursor: pointer;
+                text-decoration: none;
+            }
+
+            .project {
+                width: auto;
+                margin: 10px;
+            }
+
+            .tools {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            /* Three columns with equal width */
+            justify-content: center;
+            /* Center align horizontally */
+            padding: 10px;
             width: 90%;
-            height: auto;
+            margin: auto;
+            border: 2px solid green;
+            margin-top: 10px;
+            align-items: center;
+            gap: 20px;
+            /* Gap between grid items */
+        }
+
+        .tools>div {
+            display: flex;
             justify-content: center;
             align-items: center;
-            margin: auto;
-            padding: 10px;
-            
+            margin-bottom: 20px;
+            /* Adjust margin bottom as needed */
         }
-    .resume{
-        padding: 10px;
-        color: aqua;
-        font-size: 0.5rem;
-        border: 1px solid black !important;
-        background-color: rgb(19, 18, 18);
-        margin-top: 50px;
-        border-radius: 10px;
-        cursor: pointer;
-        text-decoration: none;
-    }
-    .project{
-        width: auto;
-        margin: 10px;
-    }
 
-    
-}
+        .toolsvg {
+            width: 100px;
+            /* Adjust size of icons */
+        }
 
 
-
-        
-
-
-
-
-
+        }
     </style>
 
 
 
 
 </head>
+
 <body>
-    
+
     <header>
-            <nav>
-                
-                <ul class='nav-bar'>
-                    <div class="left">Prince's Portfolio</div>
-                    
-                    <input type='checkbox' id='check' />
-                    <span class="menu">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#Skill&Tools">Skills</a></li>
-                        <li><a href="#projectsection">Projects</a></li>
-                        <li><a href="#contactsection">Contact</a></li>
-                        <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
-                    </span>
-                    <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
-                </ul>
-            </nav>
-            </header>
+        <nav>
+
+            <ul class='nav-bar'>
+                <div class="left">Prince's Portfolio</div>
+
+                <input type='checkbox' id='check' />
+                <span class="menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#Skill&Tools">Skills</a></li>
+                    <li><a href="#projectsection">Projects</a></li>
+                    <li><a href="#contactsection">Contact</a></li>
+                    <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+                </span>
+                <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+            </ul>
+        </nav>
+    </header>
     </header>
 
     <main>
-        
+
         <section class="firstsection">
 
             <div class="leftsection">
-                <h2>  Hi, i'm  </h2>
+                <h2> Hi, i'm </h2>
                 <h1 style="color: rgb(199, 53, 199);"><strong>Prince Kumar</strong></h1>
                 <div>
                     <!-- Element to contain animated typing -->
                     <span id="element"></span>
                 </div>
                 <div id="resume">
-                    <resume  style="margin-bottom: 20px;" ><a href="Prince_Kumar-Cap04_103-FrontendDeveloper.pdf" download="Prince_Kumar_Resume.pdf" class="resume">Resume</a></resume>
+                    <resume style="margin-bottom: 20px;"><a href="Prince_Kumar-Cap04_103-FrontendDeveloper.pdf"
+                            download="Prince_Kumar_Resume.pdf" class="resume">Resume</a></resume>
                 </div>
-                    <div class="contacticon">
-                        <a style="color: rgb(48, 48, 248);font-size: 2rem;padding-right: 2px;"
-                        href="https://www.linkedin.com/in/callmeprinceyadav/" target="_blank"><i class='bx bxl-linkedin bx-tada' ></i></a>
-                    
-                        <a style="color:#6e5494;font-size: 2rem;"
-                        href="https://www.github.com/callmeprinceyadav" target="_blank"><i class='bx bxl-github bx-tada bx-flip-vertical' ></i></a>
+                <div class="contacticon">
+                    <a style="color: rgb(48, 48, 248);font-size: 2rem;padding-right: 2px;"
+                        href="https://www.linkedin.com/in/callmeprinceyadav/" target="_blank"><i
+                            class='bx bxl-linkedin bx-tada'></i></a>
 
-                        <a style="color:#ca2170;font-size: 2rem;"
-                        href="https://www.instagram.com/callmeprinceyadav" target="_blank"><i class='bx bxl-instagram bx-tada bx-flip-vertical' ></i></a>
-                    </div>
+                    <a style="color:#6e5494;font-size: 2rem;" href="https://www.github.com/callmeprinceyadav"
+                        target="_blank"><i class='bx bxl-github bx-tada bx-flip-vertical'></i></a>
+
+                    <a style="color:#ca2170;font-size: 2rem;" href="https://www.instagram.com/callmeprinceyadav"
+                        target="_blank"><i class='bx bxl-instagram bx-tada bx-flip-vertical'></i></a>
+                </div>
             </div>
             <div class="rightsection">
-                <img style="width: 100%;border-radius: 50%;border: 1px solid rgb(141, 138, 138);" src="rename.png" alt="Prince Kumar Pic">
+                <img style="width: 100%;border-radius: 50%;border: 1px solid rgb(141, 138, 138);" src="rename.png"
+                    alt="Prince Kumar Pic">
             </div>
-            
+
         </section>
 
         <heading>
@@ -533,17 +616,20 @@
             <div class="aboutsection">
 
                 <p>Hi, i'm <span id="name" style="color: rgb(223, 22, 65);"><strong>Prince Kumar</strong></span></p>
-                
+
                 <br>
-                
+
                 <p>I am Student Of Class 12th From +2 Govt H/S R.P.S College ,
-                    Passionate about improving my coding skills and developing native applications, I am currently focused on building web applications, especially in the native field. As a self-driven individual, <divv id="Skill&Tools"></divv>I am dedicated to enhancing my skills and enjoy working on Full-Stack clones. Looking forward to continuous growth and learning in the field of technology.
-                    
+                    Passionate about improving my coding skills and developing native applications, I am currently
+                    focused on building web applications, especially in the native field. As a self-driven individual,
+                    <divv id="Skill&Tools"></divv>I am dedicated to enhancing my skills and enjoy working on Full-Stack
+                    clones. Looking forward to continuous growth and learning in the field of technology.
+
                 </p>
 
             </div>
-            
-            
+
+
         </section>
 
 
@@ -552,61 +638,79 @@
             <br>
         </heading>
 
-<section>
-        <section id="skills">
-            <div class="icons">
-                <i class="fab fa-html5" title="HTML5" id="HTML5"></i>
-                <i class="fab fa-css3" title="CSS3" id="CSS3"></i>
-                <i class="fab fa-js" title="JavaScript" id="JavaScript"></i>
-                <i class="fab fa-react" title="React" id="React"></i>
-                <i class="fab fa-node" title="Node.js" id="Node.js"></i>
-                <i class="fab fa-python" title="Python" id="Python"></i>
-                <!-- Add more icons for your specific skills -->
-                
-            </div>
-        </section>
+        <section>
+            <section id="skills">
+                <div class="icons">
+                    <i class="fab fa-html5" title="HTML5" id="HTML5"></i>
+                    <i class="fab fa-css3-alt" title="CSS3" id="CSS3"></i>
+                    <i class="fab fa-js" title="JavaScript" id="JavaScript"></i>
+                    <i class="fab fa-react" title="React" id="React"></i>
+                    <i class="fab fa-node-js" title="Node.js" id="Node.js"></i>
+                    <i class="fas fa-database" title="MongoDB" id="MongoDB"></i>
+                    <i class="fas fa-server" title="Express.js" id="Express.js"></i>
+                    <i class="fab fa-github" title="Git" id="Git"></i>
+                    <i class="fab fa-bootstrap" title="Bootstrap" id="Bootstrap"></i>
+                    <i class="fas fa-code" title="Tailwind CSS" id="TailwindCSS"></i>
+                    <i class="fas fa-ruler-combined" title="Material UI" id="MaterialUI"></i>
 
-        <heading>
-            <h2>Tools</h2>
-            <br>
-        </heading>
-        <section id="tools">
-            <div class="tools">
-                <div class="vscode" >
-                    <img class="toolsvg" src="https://www.svgrepo.com/show/342347/visual-studio-code.svg">
+
+
+                    <!-- Add more icons for your specific skills -->
+
                 </div>
-                <div class="netlify">
-                    <img class="toolsvg" src="https://www.svgrepo.com/show/369452/netlify.svg">
+            </section>
+
+            <heading>
+                <h2>Tools</h2>
+                <br>
+            </heading>
+            <section id="tools">
+                <div class="tools">
+                    <div class="vscode">
+                        <img class="toolsvg" src="https://www.svgrepo.com/show/342347/visual-studio-code.svg">
+                    </div>
+                    <div class="netlify">
+                        <img class="toolsvg" src="https://www.svgrepo.com/show/369452/netlify.svg">
+                    </div>
+                    <div class="postman">
+                        <img class="toolsvg" src="https://www.svgrepo.com/show/306590/postman.svg">
+                    </div>
+                    <div class="git">
+                        <img class="toolsvg" src="https://www.svgrepo.com/show/516636/git.svg">
+                    </div>
+                    <div class="babel">
+                        <img class="toolsvg" src="https://www.svgrepo.com/show/330023/babel.svg">
+                    </div>
+                    <div class="npm">
+                        <img class="toolsvg" src="https://www.svgrepo.com/show/445925/npm.svg">
+                    </div>
+                    <div class="babel">
+                        <img class="toolsvg" src="https://www.svgrepo.com/show/330023/babel.svg">
+                    </div>
+                    <div class="npm">
+                        <img class="toolsvg" src="https://www.svgrepo.com/show/445925/npm.svg">
+                    </div>
+
+
+
+                    <!-- Add more icons for your specific skills -->
                 </div>
-                <div class="postman">
-                    <img class="toolsvg" src="https://www.svgrepo.com/show/306590/postman.svg">
-                </div>
-                <div class="git">
-                    <img class="toolsvg" src="https://www.svgrepo.com/show/516636/git.svg">
-                </div>
-                <div class="babel">
-                    <img class="toolsvg" src="https://www.svgrepo.com/show/330023/babel.svg">
-                </div>
-                <div class="npm">
-                    <img class="toolsvg" src="https://www.svgrepo.com/show/445925/npm.svg">
-                </div>
-                
-                <!-- Add more icons for your specific skills -->
-            </div>
+            </section>
         </section>
-</section>
         <heading>
             <h2 id="github-stats">Github Stat's</h2>
             <br>
         </heading>
         <!-- GitHub Stats Section -->
         <section class="github-stats">
-            
+
             <!-- Add your GitHub stats image or embed GitHub stats widget here -->
-            <img src="https://github-readme-stats.vercel.app/api?username=callmeprinceyadav&show_icons=true&theme=dark" alt="GitHub Stats">
-        
-            <img src="https://github-readme-streak-stats.herokuapp.com/?user= callmeprinceyadav" alt="GitHub Streak Stats">
-            
+            <img src="https://github-readme-stats.vercel.app/api?username=callmeprinceyadav&show_icons=true&theme=dark"
+                alt="GitHub Stats">
+
+            <img src="https://github-readme-streak-stats.herokuapp.com/?user= callmeprinceyadav"
+                alt="GitHub Streak Stats">
+
             <img id="projectsection">
         </section>
 
@@ -622,7 +726,8 @@
                 <div class="status">
                     <h3 id="websitename">Bluefly</h3>
                     <live><a href="https://bluefly-check.netlify.app/" target="_blank">Live</a></live>
-                    <demo><a href="https://github.com/callmeprinceyadav/BlueFly" target="_blank"><i class="fab fa-github" title="GitHub"></i></a></demo>
+                    <demo><a href="https://github.com/callmeprinceyadav/BlueFly" target="_blank"><i
+                                class="fab fa-github" title="GitHub"></i></a></demo>
                 </div>
             </div>
             <div class="project">
@@ -630,7 +735,8 @@
                 <div class="status">
                     <h3 id="websitename">BeautyBebo</h3>
                     <live><a href="https://beauty-beboo.netlify.app/" target="_blank">Live</a></live>
-                    <demo><a href="https://github.com/callmeprinceyadav/Beauty.bebo" target="_blank"><i class="fab fa-github" title="GitHub"></i></a></demo>
+                    <demo><a href="https://github.com/callmeprinceyadav/Beauty.bebo" target="_blank"><i
+                                class="fab fa-github" title="GitHub"></i></a></demo>
 
                 </div>
             </div>
@@ -638,23 +744,28 @@
         </section>
 
         <br>
-        <hr id="contactsection" style="width: 50%;margin: auto;background-color: yellowgreen;height: 2px;margin-top: 50px;">
+        <hr id="contactsection"
+            style="width: 50%;margin: auto;background-color: yellowgreen;height: 2px;margin-top: 50px;">
 
 
         <section id="contact">
             <h2>Contact</h2>
             <p>Feel free to reach out to me through the following channels:</p>
             <div class="icons">
-                <a href="https://www.linkedin.com/in/callmeprinceyadav/" target="_blank"><i class="fab fa-linkedin" title="LinkedIn"></i></a>
-                <a href="https://www.github.com/callmeprinceyadav" target="_blank"><i class="fab fa-github" title="GitHub"></i></a>
-                <a href="https://www.instagram.com/callmeprinceyadav/" target="_blank"><i class="fab fa-instagram" title="Instagram"></i></a>
-                <a href="mailto:pkryadav9304@gmail.com" target="_blank"><i class="fab fa-facebook" title="Facebook"></i></a>
+                <a href="https://www.linkedin.com/in/callmeprinceyadav/" target="_blank"><i class="fab fa-linkedin"
+                        title="LinkedIn"></i></a>
+                <a href="https://www.github.com/callmeprinceyadav" target="_blank"><i class="fab fa-github"
+                        title="GitHub"></i></a>
+                <a href="https://www.instagram.com/callmeprinceyadav/" target="_blank"><i class="fab fa-instagram"
+                        title="Instagram"></i></a>
+                <a href="mailto:pkryadav9304@gmail.com" target="_blank"><i class="fab fa-facebook"
+                        title="Facebook"></i></a>
                 <!-- Add more icons and links as needed -->
             </div>
         </section>
 
 
-    </section>
+        </section>
 
     </main>
     <footer>
@@ -664,31 +775,32 @@
 
 
     <!-- Load library from the CDN -->
-  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-  <script src="themesript.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="themesript.js"></script>
 
-  <!-- Setup and start animation! -->
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-    const menuBtn = document.querySelector('.menu-btn');
-    const hamburger = document.querySelector('.hamburger');
-    const menu = document.querySelector('.menu');
+    <!-- Setup and start animation! -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const menuBtn = document.querySelector('.menu-btn');
+            const hamburger = document.querySelector('.hamburger');
+            const menu = document.querySelector('.menu');
 
-    menuBtn.addEventListener('click', function () {
-        hamburger.classList.toggle('active');
-        menu.classList.toggle('show');
+            menuBtn.addEventListener('click', function () {
+                hamburger.classList.toggle('active');
+                menu.classList.toggle('show');
             });
         });
 
-    var typed = new Typed('#element', {
-      strings: ['<i>A Passionate Web Developer</i>'],
-      typeSpeed: 100,
-    });
-    var typed = new Typed('#name', {
-      strings: ['Prince Kumar'],
-      typeSpeed: 150,
-    });
-  </script>
-    
+        var typed = new Typed('#element', {
+            strings: ['<i>A Passionate Web Developer</i>'],
+            typeSpeed: 100,
+        });
+        var typed = new Typed('#name', {
+            strings: ['Prince Kumar'],
+            typeSpeed: 150,
+        });
+    </script>
+
 </body>
+
 </html>
