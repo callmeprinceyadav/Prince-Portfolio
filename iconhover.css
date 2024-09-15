@@ -1,0 +1,24 @@
+.fas.fa-ruler-combined:hover {
+    color: #555; /* Change color on hover */
+}
+
+.fas.fa-code:hover {
+    color: #333; /* Change color on hover */
+}
+
+.fab.fa-bootstrap:hover {
+    color: #4e2a63; /* Darker Bootstrap color on hover */
+}
+
+.fas.fa-server:hover {
+    color: #17e2e2; /* Darker color on hover */
+}
+
+.fas.fa-database:hover {
+    color: #36a05c; /* Darker green on hover */
+}
+
+.fab.fa-node-js:hover {
+    color: #7ab32e; /* Darker green on hover */
+}
+

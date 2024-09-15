@@ -1,0 +1,568 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.light-mode {
+    background-color: #e9ecef;
+    color: black;
+}
+
+body.dark-mode {
+    background-color: #2e2e2e;
+    color: white;
+}
+
+.theme-toggle {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+body {
+    background-color: #e9ecef;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+
+.left {
+    font-size: 1.5rem;
+    color: black !important;
+}
+
+
+.firstsection {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 150px 0;
+    flex-wrap: wrap;
+    /* margin: auto; */
+}
+
+.firstsection>div {
+    width: 30%;
+    /* border: 2px solid green; */
+}
+
+.leftsection {
+    /* background-color: red; */
+    font-size: 2rem;
+    /* margin: 30px 0; */
+}
+
+.rightsection {
+    /* background-color: red; */
+    width: 50%;
+}
+
+.resume {
+    padding: 10px;
+    color: aqua;
+    font-size: 1rem;
+    border: 1px solid black !important;
+    background-color: rgb(19, 18, 18);
+    margin-top: 50px;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.contacticon {
+    /* border: 2px solid gray; */
+    width: auto;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+#secondsection {
+    /* border: 1px solid black!important; */
+    width: 98%;
+    height: auto;
+    display: flex;
+    margin: auto;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 100px 0;
+
+}
+
+.picsection {
+    border: 2px solid brown;
+    width: 300px;
+    height: 280px;
+    border: 0.5px solid rgb(170, 167, 167);
+    border-radius: 5px;
+    padding: auto;
+    align-items: center;
+}
+
+.picsection>img {
+    width: 100%;
+    height: 100%;
+
+}
+
+.aboutsection {
+    /* border: 2px solid green; */
+    width: 60%;
+    font-size: 1.5rem;
+}
+
+heading>h2 {
+    text-align: center;
+    text-decoration: underline;
+    font-size: 2rem;
+    margin-top: 200px;
+    /* border: 2px solid red; */
+    color: #757bb6;
+}
+
+
+
+.icons {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-items: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 30px;
+    margin: auto;
+    width: 90%;
+}
+
+.icons i {
+    font-size: 5em;
+    color: #333;
+    margin: 0 15px;
+    transition: all 0.3s ease;
+    background: #f7f7f7;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.icons i:hover {
+    color: #007bff;
+    font-size: 6em;
+    /* Slightly smaller scale increase for a smoother effect */
+    background: #e9ecef;
+    /* Background change on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    /* Stronger shadow on hover */
+}
+
+
+#HTML5:hover {
+    /* box-shadow: rgba(228, 85, 2, 0.918) 5px 5px; */
+    color: rgba(228, 85, 2, 0.918);
+
+}
+
+#CSS3:hover {
+    color: blue;
+    /* box-shadow: rgba(4, 50, 199, 0.4) 5px 5px; */
+
+}
+
+#JavaScript:hover {
+    color: rgba(250, 246, 3, 0.904);
+    /* box-shadow: rgba(250, 246, 3, 0.904) 5px 5px; */
+}
+
+#React:hover {
+    color: rgba(14, 196, 209, 0.993);
+    /* box-shadow: rgba(14, 196, 209, 0.993) 5px 5px; */
+
+}
+
+#Nodejs:hover {
+    color: rgb(10, 228, 65);
+    /* box-shadow: rgb(22, 231, 74) 5px 5px; */
+
+}
+
+#Python:hover {
+    color: rgb(44, 44, 161);
+    /* box-shadow: rgba(45, 86, 223, 0.4) 5px 5px; */
+}
+
+
+
+.tools {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* Three columns with equal width */
+    justify-content: center;
+    /* Center align horizontally */
+    padding: 10px;
+    width: 90%;
+    margin: auto;
+    /* border: 2px solid green; */
+    margin-top: 10px;
+    align-items: center;
+    gap: 20px;
+    /* Gap between grid items */
+}
+
+.tools>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    /* Adjust margin bottom as needed */
+}
+
+.toolsvg {
+    width: 100px;
+    /* Adjust size of icons */
+}
+
+
+.vscode:hover {
+    box-shadow: rgb(0, 122, 204,0.918) 5px 5px;
+    color: rgba(156, 152, 149, 0.918);
+}
+
+.postman:hover {
+    box-shadow: rgba(228, 85, 2, 0.918) 5px 5px;
+    color: rgba(228, 85, 2, 0.918);
+}
+
+.npm:hover {
+    box-shadow: rgba(238, 15, 15, 0.918) 5px 5px;
+    color: rgba(238, 15, 15, 0.918);
+}
+
+.git:hover {
+    box-shadow: rgba(0, 0, 0, 0.918) 5px 5px;
+    color: rgba(228, 85, 2, 0.918);
+}
+
+.netlify:hover {
+    box-shadow: rgba(85, 240, 14, 0.918) 5px 5px;
+    color: rgba(228, 85, 2, 0.918);
+}
+
+.babel:hover {
+    box-shadow: rgba(255, 230, 2, 0.986) 5px 5px;
+    color: rgba(255, 230, 2, 0.986);
+}
+.json-server:hover {
+    box-shadow: rgb(45, 156, 219) 5px 5px;
+    color: rgba(255, 230, 2, 0.986);
+}
+.mongodb:hover {
+    box-shadow: rgb(77, 179, 61, 0.986) 5px 5px;
+    color: rgba(255, 230, 2, 0.986);
+}
+
+.github-stats {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: auto;
+}
+
+.github-stats img {
+    width: 100%;
+    max-width: 600px;
+    margin: 10px;
+}
+
+#projects {
+    display: flex;
+    /* border: 2px solid red; */
+    width: 90%;
+    height: auto;
+    justify-content: space-around;
+    margin: auto;
+    padding: 10px;
+
+}
+
+.project {
+    width: 40%;
+    /* border: 2px solid green; */
+    padding: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+
+
+}
+
+.project>img {
+    width: 100%;
+    height: auto;
+    /* border: 2px solid green; */
+
+}
+
+#websitename {
+    margin-bottom: 10px;
+}
+
+live {
+    padding: 10px;
+    color: white;
+    font-size: 15px;
+    border: 1px solid black !important;
+    background-color: rgb(19, 18, 18);
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+live a {
+    text-decoration: none;
+    color: white;
+}
+
+demo {
+    padding: 5px;
+    padding-right: 20px;
+    padding-left: 15px;
+    color: white;
+    font-size: 1.2rem;
+    border: 1px solid black !important;
+    background-color: rgb(245, 241, 241);
+    /* margin-top: 50px; */
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#contact {
+    padding: 10px;
+    text-align: center;
+    margin: auto;
+}
+
+#contact>.icons i {
+    font-size: 3rem;
+}
+
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 15px;
+}
+
+
+.contact-icons {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    margin: auto;
+    width: 90%;
+    grid-template-columns: auto;
+
+}
+
+.contact-icons i {
+    font-size: 3em;
+    color: #333;
+    margin: 0 15px;
+    transition: color 0.9s ease;
+}
+
+.contact-icons i:hover {
+    font-size: 4em;
+
+}
+
+.fab.fa-linkedin:hover {
+    color: #005582; /* Darker LinkedIn color on hover */
+}
+
+
+/* Example of hover effect */
+.fab.fa-github:hover {
+    color: #6e5494; /* GitHub hover color */
+}
+
+
+/* Example of hover effect */
+.fab.fa-instagram:hover {
+    color: #bc2a8d; /* Darker Instagram hover color */
+}
+
+
+/* Example of hover effect */
+.fab.fa-facebook:hover {
+    color: #165dbb; /* Darker Facebook hover color */
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 700px) {
+
+    main {
+        margin: 5px;
+    }
+
+    .icons {
+        grid-template-columns: repeat(2, 1fr);
+        /* 3 icons per row for smaller screens */
+    }
+
+
+
+    .firstsection {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 120px 0;
+        flex-wrap: wrap;
+        /* margin: auto; */
+    }
+
+    .firstsection>div {
+        width: 40%;
+        /* border: 2px solid green; */
+    }
+
+    .leftsection {
+        /* background-color: red; */
+        font-size: 1rem;
+        /* margin: 30px 0; */
+    }
+
+    .rightsection {
+        /* background-color: red; */
+        width: 50%;
+    }
+
+    .picsection {
+        width: 60%;
+        height: 75%;
+        border-radius: 15px;
+        margin: auto;
+        margin-top: -10%;
+        margin-bottom: 10px;
+    }
+
+    .picsection>img {
+        margin: auto;
+        width: 100%;
+        height: 100%;
+    }
+
+    #resume {
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+
+    .contacticon {
+        /* border: 2px solid gray; */
+        width: auto;
+        /* margin-top: 2px; */
+    }
+
+
+    .aboutsection {
+        padding: 0;
+        font-size: 15px;
+    }
+
+    heading>h2 {
+        text-align: center;
+        text-decoration: underline;
+        font-size: 1rem;
+        margin-top: 100px;
+        /* border: 2px solid red; */
+        color: #757bb6;
+    }
+
+
+    #about {
+        margin-top: -30px;
+    }
+
+
+    #projects {
+        display: flex;
+        /* border: 2px solid red; */
+        flex-direction: column;
+        width: 90%;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        padding: 10px;
+
+    }
+
+    .resume {
+        padding: 10px;
+        color: aqua;
+        font-size: 0.5rem;
+        border: 1px solid black !important;
+        background-color: rgb(19, 18, 18);
+        margin-top: 50px;
+        border-radius: 10px;
+        cursor: pointer;
+        text-decoration: none;
+    }
+
+    .project {
+        width: auto;
+        margin: 10px;
+    }
+
+    .tools {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        /* Three columns with equal width */
+        justify-content: center;
+        /* Center align horizontally */
+        padding: 10px;
+        width: 90%;
+        margin: auto;
+        /* border: 2px solid green; */
+        margin-top: 10px;
+        align-items: center;
+        gap: 20px;
+        /* Gap between grid items */
+    }
+
+    .tools>div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+        /* Adjust margin bottom as needed */
+    }
+
+    .toolsvg {
+        width: 100px;
+        /* Adjust size of icons */
+    }
+
+
+}
